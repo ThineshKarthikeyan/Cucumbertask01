@@ -1,5 +1,6 @@
 package com.amazon.objectrepository;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -10,7 +11,7 @@ public class MobileSearchpage extends commonActions{
 	
 	public MobileSearchpage() {
 		
-		PageFactory.initElements(driver, this);
+		PageFactory.initElements(commonActions.driver, this);
 	}
 	
 	@FindBy(xpath = "(//input[@type='text'])")
@@ -21,6 +22,12 @@ public class MobileSearchpage extends commonActions{
 	
 	@FindBy(xpath = "//span[@class='a-truncate-cut']")
 	private WebElement addedMobile;
+	
+	@FindBy(id = "add-to-cart-button")
+	private WebElement addToCart;
+	
+	@FindBy(xpath = "(//span[@aria-hidden='true'])[1]")
+	private WebElement addedMobileIntoTheCart;
 	
 	public WebElement getSearchBox() {
 		return searchBox;
@@ -37,8 +44,11 @@ public class MobileSearchpage extends commonActions{
 	public WebElement getAddToCart() {
 		return addToCart;
 	}
+	
+	public WebElement getaddedMobileIntoTheCart() {
+		return addedMobileIntoTheCart;
+	}
 
-	@FindBy(id = "add-to-cart-button")
-	private WebElement addToCart;
+	
 
 }

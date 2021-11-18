@@ -6,7 +6,7 @@ Feature: Validating mobile purchase
 Background:
 		Given user launches Amazon application
 
-  @tag1
+  
   #Scenario: Validating mobile purchase
     #When user searching the mobile
     #And user click on Add to cart

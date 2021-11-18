@@ -6,7 +6,7 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "C:\\Users\\Thinesh\\eclipse-workspace\\CucumberTask01\\src\\test\\resources\\Features",
+@CucumberOptions(features = "C:\\Users\\Thinesh\\eclipse-workspace\\CucumberTask01\\src\\test\\resources\\Features\\MobileSearch.feature",
 				     glue = "com.amazon.stepdefinition",
 				     plugin = "html:target",
 				     monochrome = true,
